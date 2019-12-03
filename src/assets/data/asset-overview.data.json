@@ -7,5 +7,5 @@
         {"key": "Total units", "value": "10" },
         {"key": "Total amount", "value": "1000 CHF" }
     ],
-    "supportingDocs": ["News", "Statistics", "Position", "History", "News", "Statistics", "Position", "History"]
+    "supportingDocs": ["News", "Statistics", "Position", "History"]
 }
