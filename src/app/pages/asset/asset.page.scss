@@ -1,0 +1,36 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.row-detail {
+    --inner-padding-top: 10px;
+    --inner-padding-bottom: 10px;
+}
+
+.bottom-section {
+    padding: 10px;
+    padding-top: 0;
+    flex-grow: 1;
+    color: black;
+    background-color: white;
+}
+
+.expandable-row {
+    padding: 15px;
+    padding-left: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+ion-footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

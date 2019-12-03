@@ -1,0 +1,28 @@
+<app-header [title]="'Asset Overview'"></app-header>
+<ion-content>
+  <div class="content-wrapper" *ngIf="(data$ | async) as data">
+    <section class="top-section">
+      <div class="content-title">
+        <h3>{{ data.topic }}</h3>
+        <span>{{ data.alias }}</span>
+      </div>
+      <ion-item class="row-detail" lines="full"></ion-item>
+      <ion-item *ngFor="let item of data?.summary" class="row-detail" lines="full">
+        <ion-label>{{ item.key }}</ion-label>
+        <ion-note color="light" slot="end">{{ item.value }}</ion-note>
+      </ion-item>
+    </section>
+    <section class="bottom-section">
+      <h4>{{ data.about.key }}</h4>
+      <p>{{ data.about.value }}</p>
+
+      <div *ngFor="let item of data?.supportingDocs" class="expandable-row">
+        <ion-label>{{ item }}</ion-label>
+      </div>
+    </section>
+  </div>
+</ion-content>
+<ion-footer translucent="true">
+    <ion-button color="danger" shape="round" fill="outline">Sell</ion-button>
+    <ion-button shape="round" fill="outline">Buy</ion-button>
+</ion-footer>

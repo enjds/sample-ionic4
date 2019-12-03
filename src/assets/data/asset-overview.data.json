@@ -1,0 +1,11 @@
+{
+    "topic": "Ethereum",
+    "alias": "eth", 
+    "about": {"key": "About", "value": "Ethereum is a software system which is part of a decentralised system meaning it is not controlled by any single entity. Enthereum is different to Bitcoin because it expands on its technologies to create a completely new network including an internet browser..."},
+    "summary": [
+        {"key": "Price per unit", "value": "100 CHF" },
+        {"key": "Total units", "value": "10" },
+        {"key": "Total amount", "value": "1000 CHF" }
+    ],
+    "supportingDocs": ["News", "Statistics", "Position", "History", "News", "Statistics", "Position", "History"]
+}
